@@ -35,22 +35,22 @@ export default function Navbar(props) {
       <div className={`w-full ${isOpen ? "block" : "hidden"} lg:flex lg:items-center lg:w-auto`}>
         <div className="text-center lg:text-left text-sm lg:flex-grow lg:flex lg:justify-center  dark:text-white">
           <Link
-            to="#"
+            to="/"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4">
             Accueil
           </Link>
           <Link
-            to="#"
+            to="/about"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
             A Propos de moi
           </Link>
           <Link
-            to="#"
+            to="/projects"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
             Projets
           </Link>
           <Link
-            to="#"
+            to="/contact"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
             Contact
           </Link>

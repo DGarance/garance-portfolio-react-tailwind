@@ -5,7 +5,7 @@ import profil from "../../assets/Garance-profil.jpg";
 
 export default function Contact() {
   return (
-    <section className="min-h-screen bg-white dark:bg-gray-900 contact">
+    <section className="py-8 min-h-screen bg-white dark:bg-gray-900 contact">
       <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-10">
           <div className="lg:w-1/2 lg:mx-10">

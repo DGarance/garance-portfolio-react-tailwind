@@ -1,6 +1,6 @@
 import React from "react";
 
-const Progress = ({ skillName, percentage, icon }) => {
+const ProgressCircle = ({ skillName, percentage, icon }) => {
   const circumference = 20 * 2 * Math.PI;
   const dashoffset = circumference - (percentage / 100) * circumference;
 
@@ -46,4 +46,4 @@ const Progress = ({ skillName, percentage, icon }) => {
   );
 };
 
-export default Progress;
+export default ProgressCircle;

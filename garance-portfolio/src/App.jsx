@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Footer, Navbar, Card, Portfolio} from "./components";
+import { Footer, Navbar, Portfolio} from "./components";
 import { Home, About, Projects, Error, Contact } from "./pages";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         />
       </Routes>
       <Portfolio></Portfolio>
-      <Card></Card>
+      {/* <Footer /> */}
       <Footer></Footer>
     </div>
   );

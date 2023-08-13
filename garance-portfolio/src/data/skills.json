@@ -48,7 +48,7 @@
   {
     "name": "MongoDB",
     "percentage": 60,
-    "icon": "images/mongodb.svg",
+    "icon": "images/logo/mongodb.svg",
     "category": "backend"
   },
   {
