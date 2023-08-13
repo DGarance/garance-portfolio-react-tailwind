@@ -2,47 +2,47 @@
   {
     "name": "HTML",
     "percentage": 90,
-    "icon": "images/html5.svg"
+    "icon": "images/logo/html5.svg"
   },
   {
     "name": "CSS",
     "percentage": 90,
-    "icon": "images/css3.svg"
+    "icon": "images/logo/css3.svg"
   },
   {
     "name": "SASS",
     "percentage": 80,
-    "icon": "images/sass.svg",
+    "icon": "images/logo/sass.svg",
     "category": "front-end"
   },
   {
     "name": "JavaScript",
     "percentage": 70,
-    "icon": "images/javascript.svg",
+    "icon": "images/logo/javascript.svg",
     "category": "front-end"
   },
   {
     "name": "Bootstrap",
     "percentage": 50,
-    "icon": "images/bootstrap.svg",
+    "icon": "images/logo/bootstrap.svg",
     "category": "front-end"
   },
   {
     "name": "React",
     "percentage": 50,
-    "icon": "images/reactjs.svg",
+    "icon": "images/logo/reactjs.svg",
     "category": "front-end"
   },
   {
     "name": "NodeJS",
     "percentage": 60,
-    "icon": "images/nodejs.svg",
+    "icon": "images/logo/nodejs.svg",
     "category": "backend"
   },
   {
     "name": "Express",
     "percentage": 60,
-    "icon": "images/sass.svg",
+    "icon": "images/logo/sass.svg",
     "category": "backend"
   },
   {
@@ -54,14 +54,13 @@
   {
     "name": "Git/Github",
     "percentage": 75,
-    "icon": "images/git.svg",
+    "icon": "images/logo/git.svg",
     "category": "backend"
   },
   {
     "name": "TailwindCSS",
     "percentage": 75,
-    "icon": "images/tailwindcss.svg",
+    "icon": "images/logo/tailwindcss.svg",
     "category": "front-end"
   }
-
 ]

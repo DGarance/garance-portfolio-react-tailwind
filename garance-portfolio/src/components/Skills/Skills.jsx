@@ -12,7 +12,7 @@ export default function Skills() {
         <div className="text-center mb-6">
           <h1 className="text-4xl font-bold text dark:text-black">Mes compétences</h1>
         </div>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 text-center">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 text-center justify-center">
           <div className="text-center">
             {frontendSkills.map((skill, index) => (
               <Progress
@@ -25,7 +25,6 @@ export default function Skills() {
             ))}
           </div>
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-white dark:text-black mb-4">Back-end</h2>
             {backendSkills.map((skill, index) => (
               <Progress
                 key={index}
