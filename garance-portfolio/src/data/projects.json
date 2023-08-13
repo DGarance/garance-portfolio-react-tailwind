@@ -1,9 +1,61 @@
 [
-    {
-        "title":"Booki | OpenClassrooms",
-        "description":"Intégration d'une maquette ",
-        "cover":,
-        "github":"",
-        "live": ,
-    "tags":   }
+  {
+    "id": "aa744e07-c157-47e0-8520-51df1fac7213",
+    "title": "Booki | OpenClassrooms",
+    "description": "Intégration de maquette de site web avec HTML/CSS, en respectant la mise en page et en rendant l'interface responsive.",
+    "cover": "images/Booki.png",
+    "github": "https://github.com/DGarance/Projet-2",
+    "live": "https://dgarance.github.io/Projet-2/",
+    "tags": ["HTML5", "CSS3"]
+  },
+
+  {
+    "id": "f412b333-50d7-4c41-9b54-e8dd64b6d165",
+    "title": "Ohmyfood | OpenClassrooms",
+    "description": "Animation d'une page web avec des effets graphiques avancés en utilisant des outils de gestion de versions pour l'hébergement et le suivi du projet.",
+    "cover": "images/Booki.png",
+    "github": "https://github.com/DGarance/Projet-3",
+    "live": "https://dgarance.github.io/Projet-3/",
+    "tags": ["HTML5", "SASS", "GIT"]
+  },
+
+  {
+    "id": "da3e11f9-5bd8-475e-8f20-09b95596d199",
+    "title": "La Panthère | OpenClassrooms",
+    "description": "Optimisation d'un site web existant pour garantir l'accessibilité, le référencement, la vitesse et la maintenabilité du code HTML/CSS.",
+    "cover": "images/Booki.png",
+    "github": "https://github.com/DGarance/Projet-4",
+    "live": "https://dgarance.github.io/Projet-4/",
+    "tags": ["HTML5", "CSS3", "SEO", "ACCESSIBILITE"]
+  },
+
+  {
+    "id": "8733a25b-c749-47a4-8dca-9b85bcb3f63b",
+    "title": "Kanap | OpenClassrooms",
+    "description": "Développement d'un site e-commerce en JavaScript, en gérant les tests, la validation des données, l'interaction avec des services web et les événements JavaScript.",
+    "cover": "images/Booki.png",
+    "github": "https://github.com/DGarance/Projet-5",
+    "live": "https://dgarance.github.io/Projet-5/",
+    "tags": ["JAVASCRIPT"]
+  },
+
+  {
+    "id": "a134b45c-9a4e-4bad-a1d8-7d6311f8fda6",
+    "title": "Piiquante | OpenClassrooms",
+    "description": "Création d'une API sécurisée pour une application d'avis gastronomiques, en implémentant des opérations CRUD sécurisées, un modèle logique de données conforme à la réglementation et un stockage de données sécurisé.",
+    "cover": "images/Booki.png",
+    "github": "https://github.com/DGarance/Projet-6",
+    "live": "https://dgarance.github.io/Projet-6/",
+    "tags": ["NODEJS", "EXPRESS", "MONGODB", "MONGOOSE", "JAVASCRIPT", "API", "SECURITE"]
+  },
+
+  {
+    "id": "b60970a5-01ee-4998-b149-99ad2d453cc9",
+    "title": "Kasa | OpenClassrooms",
+    "description": "Création d'une application web de location immobilière avec React, en utilisant des composants React pour développer des éléments d'interface et configurer la navigation entre les pages de l'application.",
+    "cover": "images/Booki.png",
+    "github": "https://github.com/DGarance/Projet-7",
+    "live": "https://dgarance.github.io/Projet-7/",
+    "tags": ["REACTJS", "SASS"]
+  }
 ]

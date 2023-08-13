@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Footer, Navbar, Card, Skills } from "./components";
+import { Footer, Navbar, Card, Portfolio} from "./components";
 import { Home, About, Projects, Error, Contact } from "./pages";
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
           element={<Error />}
         />
       </Routes>
+      <Portfolio></Portfolio>
       <Card></Card>
-      <Skills></Skills>
       <Footer></Footer>
     </div>
   );

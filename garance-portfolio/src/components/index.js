@@ -4,4 +4,4 @@ export { default as Card } from "./Card/Card";
 export { default as Hero } from "./Hero/Hero";
 export { default as Progress } from "./Progress/Progress";
 export { default as Skills } from "./Skills/Skills";
-
+export { default as Portfolio } from "./Portfolio/Portfolio";
