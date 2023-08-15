@@ -45,7 +45,7 @@ export default function Navbar(props) {
             A Propos de moi
           </Link>
           <Link
-            to="/projects"
+            to="/portfolio"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
             Projets
           </Link>

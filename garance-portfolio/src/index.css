@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-slate-800 hover:bg-white focus:ring-8 focus:ring-black dark:text-white;
+  }
+  .btn-transparent {
+    @apply inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+  }
+  .btn-contact {
+    @apply w-full px-5 py-3 mt-4 text-base font-medium text-center text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50;
+  }
+}

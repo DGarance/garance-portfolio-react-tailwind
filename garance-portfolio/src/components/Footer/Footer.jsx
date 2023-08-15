@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-white py-12 px-8 md:py-10 lg:py-8 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto flex items-center flex-col lg:flex-row lg:justify-between">
         <p className="text-base dark:text-white underline">garance.defrel@outlook.com</p>
-        <div class="flex my-4 lg:order-3">
+        <div className="flex my-4 lg:order-3">
           <Link
             href="#"
             target="_blank"

@@ -1,69 +1,58 @@
+import React from "react";
 import { useParams } from "react-router-dom";
-import work from "../../data/projects.json";
+import projects from "../../data/projects.json";
+import Tag from "../../components/Tag/Tag";
 
-export default function Locations() {
-  const params = useParams();
-  const projects = work.find((projects) => projects.id === params.id);
-  const slidePics = projects && projects.pictures;
-  const tags = projects && projects.tags;
-  const equipments = projects && projects.equipments;
-  const listEquipments =
-    projects &&
-    equipments.map((item, index) => (
-      <li
-        key={index}
-        className="listEquipments">
-        {item}
-      </li>
-    ));
+export default function Projects() {
+  const { id } = useParams();
+  console.log("Id from url:", id);
+  const work = projects.find((work) => work.id === id);
+  console.log("Work:", work);
+  const tags = work && work.tags;
+
+  if (!work) {
+    return <div>Projet non trouvé</div>; // Gère le cas où le projet n'est pas trouvé
+  }
 
   return (
-    projects && (
-      <div
-        key={params.id}
-        className="location">
-        <section className="location__container">
-          <div className="location__container-tags-title">
-            <div className="location__title">
-              <h1>{projects.title}</h1>
-              <h3>{projects.location}</h3>
-            </div>
-            <div className="location__tags">
-              {tags.map((tags) => (
-                <Tag
-                  key={tags}
-                  tag={tags}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="location__host-rating">
-            <div className="location__host">
-              <Host
-                hostName={projects.host.name}
-                hostPic={projects.host.picture}
-              />
-            </div>
-            <div className="location__rating">
-              <Rating score={projects.rating} />
-            </div>
-          </div>
-        </section>
-        <div className="location__dropdown">
-          <div className="location__dropdown-des">
-            <Dropdown
-              aboutTitle="Description"
-              aboutText={projects.description}
-            />
-          </div>
-          <div className="location__dropdown-eqp">
-            <Dropdown
-              aboutTitle="Équipements"
-              aboutText={listEquipments}
-            />
-          </div>
+    <div className="container px-6 py-12 mx-auto">
+      <div className="text-center">
+        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">{work.title}</h1>
+        <div className="mt-2 space-x-2">
+          {tags.map((tag) => (
+            <Tag
+              key={tag}
+              tag={tag}></Tag>
+          ))}
         </div>
       </div>
-    )
+      <div className="mt-8">
+        <img
+          className="object-cover w-full rounded-lg h-96"
+          src={work.cover}
+          alt={work.title}
+        />
+      </div>
+      <div className="mt-8">
+        <p className="text-gray-700 dark:text-gray-300">{work.description}</p>
+      </div>
+      <div className="mt-8 text-center">
+        <a
+          href={work.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline">
+          Lien GitHub
+        </a>
+        <span className="mx-2 text-gray-500 dark:text-gray-300">|</span>
+        <a
+          href={work.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline">
+          Lien Live
+        </a>
+      </div>
+    </div>
   );
 }
