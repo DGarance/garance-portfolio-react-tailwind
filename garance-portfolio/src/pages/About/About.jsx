@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAward, FaUserGraduate, FaRegFileCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Profil, CardIntro } from "../../components";
+import { CardIntro } from "../../components";
 
 export default function About() {
   return (
@@ -10,7 +10,6 @@ export default function About() {
       <h2 className="section__title">À propos de moi</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Profil />
         <div className="text-center md:text-left">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
             <CardIntro

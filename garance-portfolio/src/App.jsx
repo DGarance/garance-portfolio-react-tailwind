@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Footer, Navbar,Portfolio } from "./components";
-import { Home, About, Projects, Error, Contact, } from "./pages";
+import { Footer, Navbar, Portfolio } from "./components";
+import { Home, About, Projects, Error, Contact } from "./pages";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,11 +26,11 @@ function App() {
         />
         <Route
           path="/portfolio"
-          element={Portfolio}
+          element={<Portfolio />}
         />
         <Route
           path="/portfolio/:id"
-          element={Projects}
+          element={<Projects />}
         />
         <Route
           path="/contact"

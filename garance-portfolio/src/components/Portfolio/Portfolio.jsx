@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 
 export default function Portfolio() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className=" dark:bg-martinique-900">
       <div className="container px-6 py-12 mx-auto">
         <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">Portfolio</h1>
 
@@ -14,11 +14,14 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
               {projects.map((item, index) => (
                 <div key={index}>
-                  <Card
-                    cover={item.cover}
-                    title={item.title}
-                    description={item.description}
-                  />
+                  <Link to={`/portfolio/${item.id}`}>
+                    <Card
+                      cover={item.cover}
+                      title={item.title}
+                      description={item.description}
+                      item={`/portfolio/${item.id}`}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>

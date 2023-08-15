@@ -6,4 +6,3 @@ export { default as ProgressCircle } from "./ProgressCircle/ProgressCircle";
 export { default as Portfolio } from "./Portfolio/Portfolio";
 export { default as Tag } from "./Tag/Tag";
 export { default as Button } from "./Button/Button";
-export { default as Profil } from "./Profil/Profil";

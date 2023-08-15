@@ -5,9 +5,7 @@ import Tag from "../../components/Tag/Tag";
 
 export default function Projects() {
   const { id } = useParams();
-  console.log("Id from url:", id);
   const work = projects.find((work) => work.id === id);
-  console.log("Work:", work);
   const tags = work && work.tags;
 
   if (!work) {
@@ -15,23 +13,23 @@ export default function Projects() {
   }
 
   return (
-    <div className="container px-6 py-12 mx-auto">
+    <div className="w-full px-6 py-12 mx-auto dark:bg-martinique-900">
       <div className="text-center">
         <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">{work.title}</h1>
-        <div className="mt-2 space-x-2">
-          {tags.map((tag) => (
-            <Tag
-              key={tag}
-              tag={tag}></Tag>
-          ))}
-        </div>
-      </div>
-      <div className="mt-8">
-        <img
+        <div className="mt-2 space-x-2"><img
           className="object-cover w-full rounded-lg h-96"
           src={work.cover}
           alt={work.title}
         />
+          {tags.map((tags) => (
+            <Tag
+              key={tags}
+              tag={tags}></Tag>
+          ))}
+        </div>
+      </div>
+      <div className="mt-8">
+        
       </div>
       <div className="mt-8">
         <p className="text-gray-700 dark:text-gray-300">{work.description}</p>
