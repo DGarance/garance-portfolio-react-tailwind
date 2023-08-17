@@ -1,56 +1,97 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "../../data/projects.json";
-import Tag from "../../components/Tag/Tag";
+import { FaAddressBook } from "react-icons/fa";
+import { Tag } from "../../components";
 
 export default function Projects() {
-  const { id } = useParams();
-  const work = projects.find((work) => work.id === id);
+  const params = useParams();
+  const work = projects.find((work) => work.id === params.id);
   const tags = work && work.tags;
+  const competences = work && work.competences;
+  const listCompetences =
+    work &&
+    competences.map((item, index) => (
+      <li
+        className="flex gap-x-3"
+        key={index}>
+        <FaAddressBook
+          className="mt-1 h-5 w-5 flex-none text-indigo-600"
+          aria-hidden="true"
+        />{" "}
+        {item}
+      </li>
+    ));
 
   if (!work) {
     return <div>Projet non trouvé</div>; // Gère le cas où le projet n'est pas trouvé
   }
 
   return (
-    <div className="w-full px-6 py-12 mx-auto dark:bg-martinique-900">
-      <div className="text-center">
-        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">{work.title}</h1>
-        <div className="mt-2 space-x-2"><img
-          className="object-cover w-full rounded-lg h-96"
-          src={work.cover}
-          alt={work.title}
-        />
-          {tags.map((tags) => (
-            <Tag
-              key={tags}
-              tag={tags}></Tag>
-          ))}
+    work && (
+      <div
+        key={params.id}
+        className="w-full px-6 py-12 mx-auto dark:bg-martinique-900">
+        <div className="relative isolate overflow-hidden bg-martinique-50 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="lg:pr-4">
+                <div className="lg:max-w-lg">
+                  <p className="text-base font-semibold leading-7 text-martinique-600">
+                    Parcours Développeur Web OpenClassrooms
+                  </p>
+                  <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{work.title}</h1>
+                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Contexte</h2>
+                  <p className="mt-6 text-xl leading-8 text-gray-700">{work.contexte}</p>
+                  <div>
+                    {tags.map((tags) => (
+                      <Tag
+                        key={tags}
+                        tags={tags}></Tag>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+              <img
+                className="w-[48rem] max-w-none rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                src={work.brand}
+                alt=""
+              />
+            </div>
+            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="lg:pr-4">
+                <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Objectifs d'apprentissage</h2>
+                  <p>{work.apprentissage}</p>
+                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Compétences évaluées</h2>
+                  <ul className="mt-8 space-y-8 text-gray-600">{listCompetences}</ul>
+                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Bilan</h2>
+                  <p className="mt-8">{work.bilan}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            <a
+              href={work.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline">
+              Lien GitHub
+            </a>
+            <span className="mx-2 text-gray-500 dark:text-gray-300">|</span>
+            <a
+              href={work.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline">
+              Lien Live
+            </a>
+          </div>
         </div>
       </div>
-      <div className="mt-8">
-        
-      </div>
-      <div className="mt-8">
-        <p className="text-gray-700 dark:text-gray-300">{work.description}</p>
-      </div>
-      <div className="mt-8 text-center">
-        <a
-          href={work.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline">
-          Lien GitHub
-        </a>
-        <span className="mx-2 text-gray-500 dark:text-gray-300">|</span>
-        <a
-          href={work.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline">
-          Lien Live
-        </a>
-      </div>
-    </div>
+    )
   );
 }

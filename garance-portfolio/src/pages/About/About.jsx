@@ -2,14 +2,18 @@ import React from "react";
 import { FaAward, FaUserGraduate, FaRegFileCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CardIntro } from "../../components";
+import profil from "../../assets/Garance-profil.jpg";
 
 export default function About() {
   return (
-    <section className="py-8 min-h-screen bg-white dark:bg-gray-900 contact">
-      <span className="section__subtitle">Ma Présentation</span>
-      <h2 className="section__title">À propos de moi</h2>
-
+    <section className="py-20 min-h-screen bg-martinique-50 dark:bg-gray-900 contact">
+      <h2 className="text-center">À propos de moi</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img
+          className="w-full h-full rounded-lg items-center"
+          src={profil}
+          alt="Garance"
+        />
         <div className="text-center md:text-left">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
             <CardIntro

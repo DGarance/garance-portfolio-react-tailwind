@@ -9,7 +9,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold font-serif text-xl mb-8 mt-0 leading-tight tracking-widest uppercase;
+    @apply font-bold font-serif text-xl mb-8 mt-0 leading-tight tracking-widest uppercase text-martinique-800;
   }
   body {
     @apply bg-martinique-50 text-black font-serif leading-normal tracking-normal dark:bg-martinique-950;

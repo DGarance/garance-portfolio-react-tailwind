@@ -19,7 +19,7 @@ const ProgressCircle = ({ skillName, percentage, icon }) => {
               cy="50%"
             />
             <circle
-              className="text-blue-600"
+              className="text-martinique-700"
               strokeWidth="4"
               strokeDasharray={circumference}
               strokeDashoffset={dashoffset}
