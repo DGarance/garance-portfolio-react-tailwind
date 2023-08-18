@@ -1,11 +1,10 @@
 import React from "react";
 import projects from "../../data/projects.json";
-import { Link } from "react-router-dom";
-import Card from "../../components/Card/Card"
+import Card from "../../components/Card/Card";
 
 export default function Portfolio() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="my-16 bg-martinique-50 dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">Portfolio</h1>
 

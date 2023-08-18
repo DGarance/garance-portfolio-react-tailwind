@@ -3,27 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply p-0 m-0;
+  }
+  html {
+    @apply scroll-smooth;
+  }
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-bold font-serif text-xl mb-8 mt-0 leading-tight tracking-widest uppercase text-martinique-800;
+    @apply text-center font-bold font-display text-xl my-4 leading-tight tracking-widest uppercase text-martinique-800 dark:text-martinique-50;
+  }
+  p,
+  span,
+  a,label{
+    @apply text-martinique-950 dark:text-white font-montserrat leading-relaxed mt-auto;
   }
   body {
-    @apply bg-martinique-50 text-black font-serif leading-normal tracking-normal dark:bg-martinique-950;
+    @apply bg-martinique-50 text-black  leading-normal tracking-normal dark:bg-martinique-950;
   }
 }
 
 @layer components {
-  .btn-blue {
-    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg  hover:bg-martinique-50 focus:ring-4 focus:ring-martinique-300 dark:text-white;
+  .btn-hover {
+    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg  hover:bg-martinique-700 focus:ring-4 focus:ring-martinique-900 dark:text-white;
   }
   .btn-transparent {
-    @apply inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-martinique-700 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-martinique-700 dark:hover:bg-martinique-700 dark:focus:ring-martinique-800;
   }
   .btn-contact {
-    @apply w-full px-5 py-3 mt-4 text-base font-medium text-center text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50;
+    @apply w-full px-5 py-3 mt-4 text-base font-medium text-center text-white capitalize transition-colors duration-300 transform bg-martinique-500 rounded-md hover:bg-martinique-400 focus:outline-none focus:ring focus:ring-martinique-300 focus:ring-opacity-50;
+  }
+  .icon-color {
+    @apply inline-flex justify-center items-center mx-1.5 dark:hover:text-martinique-400 text-martinique-400 transition-colors duration-300 transform hover:text-martinique-500;
   }
 }

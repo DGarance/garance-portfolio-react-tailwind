@@ -12,22 +12,27 @@ export default function Hero() {
         <h2 className="dark:text-martinique-50">Garance Defrel,</h2>
         <h1 className="font-bold text-4xl xl:text-5xl dark:text-martinique-50 ">
           Développeuse Web
-          <span className="text-martinique-900 dark:text-martinique-300"> Fullstack</span>
+          <span className="text-martinique-900 dark:text-martinique-300 font-display"> Fullstack</span>
         </h1>
         <p className="text-gray-600 max-w-xl leading-relaxed sm:mx-auto ">
-          En quêtes de nouvelles opportunités en développement Front-end
+          En quête de nouvelles opportunités en développement Front-end
         </p>
         <div className="pt-10 items-center justify-center space-y-3 sm:space-y-0 lg:justify-start">
-          <Button
-            className="btn-blue items-center"
-            color="blue"
-            text="Mon Cv"
-            icon={<FiArrowRight className="w-5 h-5 ml-2 -mr-1" />}></Button>
-          <Button
-            className="btn-transparent"
-            color="transparent"
-            text="Mon Portfolio"
-          />
+          <Link to="https://dgarance.github.io/Portfolio_Garance/">
+            <Button
+              className="btn-hover items-center"
+              color="hover"
+              text="Mon Cv"
+              icon={<FiArrowRight className="w-5 h-5 ml-2 -mr-1" />}
+            />
+          </Link>
+          <Link to="/portfolio">
+            <Button
+              className="btn-transparent"
+              color="transparent"
+              text="Mon Portfolio"
+            />
+          </Link>
         </div>
         <div className="flex-1 items-center mt-7 lg:mt-0 lg:ml-3">
           <img

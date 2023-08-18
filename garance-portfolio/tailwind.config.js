@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       colors: {
         martinique: {
           50: "#f4f7fa",
@@ -17,10 +21,6 @@ module.exports = {
           900: "#3f4869",
           950: "#32374e",
         },
-      },
-      fontFamily: {
-        sans: ["Poppins", "sans-serif"],
-        serif: ["Poppins", "serif"],
       },
     },
   },
