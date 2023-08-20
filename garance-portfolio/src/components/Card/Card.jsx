@@ -5,15 +5,15 @@ import Button from "../Button/Button";
 
 export default function Card({ cover, title, description, item }) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full h-full">
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-martinique-600 dark:border-martinique-900 w-full h-full">
       <img
         className="rounded-t-lg"
         src={cover}
         alt="projet"
       />
       <div className="p-5">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{description} </p>
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-martinique-50">{title}</h5>
+        <p className="mb-3 font-normal text-gray-700 dark:text-martinique-50">{description} </p>
 
         <Link to={item}>
           <Button

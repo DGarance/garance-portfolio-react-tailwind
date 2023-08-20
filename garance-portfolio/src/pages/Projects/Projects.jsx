@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import projects from "../../data/projects.json";
-import { FaAddressBook, FaWifi, FaGithub } from "react-icons/fa";
+import { FaWifi, FaGithub, FaCheckCircle } from "react-icons/fa";
 import { Tag, Button } from "../../components";
 
 export default function Projects() {
@@ -15,8 +15,8 @@ export default function Projects() {
       <li
         className="flex gap-x-3"
         key={index}>
-        <FaAddressBook
-          className="mt-1 h-5 w-5 flex-none text-indigo-600"
+        <FaCheckCircle
+          className="mt-1 h-5 w-5 flex-none text-martinique-600"
           aria-hidden="true"
         />{" "}
         {item}
@@ -85,7 +85,7 @@ export default function Projects() {
                 icon={<FaGithub className="w-5 h-5 ml-2 -mr-1" />}
               />
             </Link>
-           
+
             <Link
               to={work.live}
               target="_blank"
