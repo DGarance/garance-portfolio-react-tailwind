@@ -7,15 +7,15 @@ export default function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-martinique-100 border-gray-200 dark:bg-martinique-400 shadow fixed top-0 w-full z-50 lg:flex lg:justify-around">
+    <nav className="navbar">
       <div className="flex justify-between items-center px-4 py-3">
         <div className="flex items-center">
-          <span className="text-martinique-950 text-xl font-semibold dark:text-white">Garance Defrel</span>
+          <span className="navbar-brand">Garance Defrel</span>
         </div>
         <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400  dark:text-white">
+            className="navbar-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
@@ -32,26 +32,26 @@ export default function Navbar(props) {
           </button>
         </div>
       </div>
-      <div className={`w-full ${isOpen ? "block" : "hidden"} lg:flex lg:items-center lg:w-auto`}>
-        <div className="text-center lg:text-left text-sm lg:flex-grow lg:flex lg:justify-center  dark:text-white">
+      <div className={`navbar-toggle ${isOpen ? "block" : "hidden"} lg:flex lg:items-center lg:w-auto `}>
+        <div className="navbar-links">
           <Link
             to="/"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4">
+            className="navbar-link">
             Accueil
           </Link>
           <Link
             to="/about"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
+            className="navbar-link">
             A Propos de moi
           </Link>
           <Link
             to="/portfolio"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
+            className="navbar-link ">
             Portfolio
           </Link>
           <Link
             to="/contact"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 ">
+            className="navbar-link">
             Contact
           </Link>
         </div>

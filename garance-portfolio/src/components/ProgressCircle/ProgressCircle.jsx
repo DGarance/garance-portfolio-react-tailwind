@@ -5,12 +5,12 @@ const ProgressCircle = ({ skillName, percentage, icon }) => {
   const dashoffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div className="flex items-center">
+    <div className="progress-circle-container">
       <div className="flex flex-col justify-center">
-        <div className="relative w-32 h-32">
-          <svg className="absolute w-full h-full">
+        <div className="progress-circle">
+          <svg className="progress-circle-svg">
             <circle
-              className="text-gray-300"
+              className="progress-circle-bg"
               strokeWidth="4"
               stroke="currentColor"
               fill="transparent"
@@ -19,7 +19,7 @@ const ProgressCircle = ({ skillName, percentage, icon }) => {
               cy="50%"
             />
             <circle
-              className="text-martinique-700"
+              className="progress-circle-fg"
               strokeWidth="4"
               strokeDasharray={circumference}
               strokeDashoffset={dashoffset}
@@ -33,15 +33,14 @@ const ProgressCircle = ({ skillName, percentage, icon }) => {
           </svg>
         </div>
       </div>
-      <div className="mr-2">
+      <div className="progress-circle-icon">
         <img
-          className="fill-martinique-500"
           src={icon}
           alt="icon"
         />
       </div>
-      <div className="ml-2">
-        <p className="text-lg font-medium text-gray-600">{skillName}</p>
+      <div className="progress-circle-text">
+        <p>{skillName}</p>
       </div>
     </div>
   );

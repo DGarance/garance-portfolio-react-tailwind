@@ -43,18 +43,18 @@ export default function FormContact() {
       onSubmit={sendEmail}>
       <div className="-mx-2 md:items-center md:flex">
         <div className="flex-1 px-2">
-          <label className="block mb-2 tex-sm">Nom et Prénom</label>
+          <label className="form-label">Nom et Prénom</label>
           <input
-            className="block w-full px-5 py-3 mt-2 bg-white border border-gray-200 rounded-md dark:placeholder-martinique-50 dark:bg-martinique-500 dark:text-martinique-50 dark:border-martinique-400 focus:border-martinique-400 dark:focus:border-martinique-50 focus:ring-martinique-50 focus:outline-none focus:ring focus:ring-opacity-40"
+            className="form-input"
             type="text"
             name="user_name"
             placeholder="John Doe"
           />
         </div>
         <div className="flex-1 px-2 mt-4 md:mt-0">
-          <label className="block mb-2 tex-sm">Votre adresse mail</label>
+          <label className="form-label">Votre adresse mail</label>
           <input
-            className="block w-full px-5 py-3 mt-2 bg-white border border-gray-200 rounded-md dark:placeholder-martinique-50 dark:bg-martinique-500 dark:text-martinique-50 dark:border-martinique-400 focus:border-martinique-400 dark:focus:border-martinique-50 focus:ring-martinique-50 focus:outline-none focus:ring focus:ring-opacity-40"
+            className="form-input"
             type="email"
             name="user_email"
             placeholder="johndoe@example.com"
@@ -62,15 +62,15 @@ export default function FormContact() {
         </div>
       </div>
       <div className="w-full mt-4">
-        <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+        <label className="form-label">Message</label>
         <textarea
-          className="block w-full h-32 px-5 py-3 mt-2  bg-white border border-gray-200 rounded-md dark:placeholder-martinique-50 dark:bg-martinique-500 dark:text-martinique-50 dark:border-martinique-400 focus:border-martinique-400 dark:focus:border-martinique-50 focus:ring-martinique-50 focus:outline-none focus:ring focus:ring-opacity-40"
+          className="form-textarea"
           placeholder="Message"
           name="message"
         />
       </div>
       <input
-        className="btn-contact"
+        className="form-submit"
         color="contact"
         type="submit"
         value="Envoyer"

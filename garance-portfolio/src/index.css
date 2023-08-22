@@ -3,31 +3,28 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply p-0 m-0;
-  }
-  html {
-    @apply scroll-smooth;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-center font-bold font-display text-xl my-4 leading-tight tracking-widest uppercase text-martinique-800 dark:text-martinique-50;
-  }
-  p,
-  span,
-  a,label{
-    @apply text-martinique-950 dark:text-white font-montserrat leading-relaxed mt-auto;
-  }
-  body {
-    @apply bg-martinique-50 text-black  leading-normal tracking-normal dark:bg-martinique-950;
-  }
 }
 
 @layer components {
+  /*Navbar*/
+  .navbar {
+    @apply bg-martinique-100 border-gray-200 dark:bg-martinique-400 shadow fixed top-0 w-full z-50 lg:flex lg:justify-around;
+  }
+  .navbar-brand {
+    @apply text-martinique-950 text-xl font-semibold dark:text-white;
+  }
+  .navbar-button {
+    @apply flex items-center px-3 py-2 rounded text-martinique-950 hover:text-martinique-700 dark:text-white;
+  }
+  .navbar-links {
+    @apply text-center lg:text-left text-sm lg:flex-grow lg:flex lg:justify-center dark:text-white;
+  }
+  .navbar-link {
+    @apply block mt-4 lg:inline-block lg:mt-0 text-martinique-950 lg:mr-4;
+  }
+  .navbar-toggle {
+    @apply w-full lg:flex lg:items-center lg:w-auto;
+  }
   .btn-hover {
     @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg  hover:bg-martinique-400 focus:ring-4 focus:ring-martinique-900 dark:text-white;
   }
@@ -38,6 +35,95 @@
     @apply w-full px-5 py-3 mt-4 text-base font-medium text-center text-white capitalize transition-colors duration-300 transform bg-martinique-400 rounded-md hover:bg-martinique-400 focus:outline-none focus:ring focus:ring-martinique-300 focus:ring-opacity-50;
   }
   .icon-color {
-    @apply inline-flex justify-center items-center mx-1.5 dark:hover:text-martinique-400 text-martinique-400 transition-colors duration-300 transform hover:text-martinique-500;
+    @apply inline-flex justify-center items-center mx-1.5 dark:hover:text-martinique-800 text-martinique-400 transition-colors duration-300 transform dark:text-martinique-50 hover:text-martinique-500;
+  }
+  /*Progress Circle*/
+  .progress-circle-container {
+    @apply flex items-center;
+  }
+
+  .progress-circle {
+    @apply relative w-32 h-32;
+  }
+
+  .progress-circle-svg {
+    @apply absolute w-full h-full;
+  }
+
+  .progress-circle-bg {
+    @apply text-martinique-100;
+  }
+
+  .progress-circle-fg {
+    @apply text-martinique-800;
+  }
+
+  .progress-circle-icon {
+    @apply mr-2;
+  }
+
+  .progress-circle-text {
+    @apply ml-2 text-lg font-medium text-martinique-950 dark:text-martinique-50;
+  }
+  /* Card */
+  .card-wrapper {
+    @apply max-w-sm bg-martinique-50 border border-martinique-200 rounded-lg shadow dark:bg-martinique-600 dark:border-martinique-900 w-full h-full;
+  }
+  .card-image {
+    @apply rounded-t-lg;
+  }
+  .card-title {
+    @apply mb-2 text-2xl font-bold tracking-tight text-martinique-900 dark:text-martinique-50;
+  }
+  .card-description {
+    @apply mb-3 font-normal text-martinique-700 dark:text-martinique-50;
+  }
+
+  /* Portfolio */
+  .portfolio-section {
+    @apply bg-martinique-50 dark:bg-martinique-900;
+  }
+  .portfolio-title {
+    @apply text-2xl font-semibold leading-10 text-martinique-800 lg:text-3xl dark:text-martinique-50;
+  }
+  .portfolio-container {
+    @apply container px-6 py-12 mx-auto;
+  }
+  .portfolio-grid {
+    @apply mt-8 xl:mt-16 lg:flex lg:-mx-12;
+  }
+  .portfolio-item {
+    @apply grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3;
+  }
+
+  /*Form*/
+  .form-label {
+    @apply block mb-2 text-sm;
+  }
+  .form-input {
+    @apply block w-full px-5 py-3 mt-2 bg-white border border-martinique-200 rounded-md dark:placeholder-martinique-50 dark:bg-martinique-500 dark:text-martinique-50 dark:border-martinique-400 focus:border-martinique-400 dark:focus:border-martinique-50 focus:ring-martinique-50 focus:outline-none focus:ring-opacity-40;
+  }
+  .form-textarea {
+    @apply block w-full h-32 px-5 py-3 mt-2 bg-white border border-gray-200 rounded-md dark:placeholder-martinique-50 dark:bg-martinique-500 dark:text-martinique-50 dark:border-martinique-400 focus:border-martinique-400 dark:focus:border-martinique-50 focus:ring-martinique-50 focus:outline-none focus:ring focus:ring-opacity-40;
+  }
+  .form-submit {
+    @apply btn-contact;
+  }
+  .tag {
+    @apply inline-flex items-center mr-2 rounded-md bg-martinique-50 px-4 py-3 text-xs font-medium text-martinique-950 ring-1 ring-inset ring-martinique-500/10 dark:bg-martinique-400 dark:text-martinique-50;
+  }
+
+  /*Footer*/
+  .footer {
+    @apply mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-martinique-100 dark:bg-martinique-400;
+  }
+  .footer-link {
+    @apply flex-none text-xl font-semibold text-martinique-950 dark:text-martinique-50;
+  }
+  .footer-email {
+    @apply text-martinique-950 mb-4 dark:text-martinique-50;
+  }
+  .footer-copyright {
+    @apply text-sm text-center text-martinique-950 dark:text-martinique-50;
   }
 }

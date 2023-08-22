@@ -1,11 +1,13 @@
 import React from "react";
-export default function Button({ text, color, icon }) {
+import { Link } from "react-router-dom";
+
+export default function Button({ text, color, icon, margin,to }) {
   return (
-    <button
-      type="button"
-      className={`btn-${color} my-6`}>
+    <Link
+      to={to}
+      className={`btn-${color} ${margin}`}>
       {text}
       {icon}
-    </button>
+    </Link>
   );
 }

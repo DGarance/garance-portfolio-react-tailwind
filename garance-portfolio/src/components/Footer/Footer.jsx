@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-martinique-100 dark:bg-martinique-400">
+    <footer className="footer">
       <div className="text-center">
         <div>
           <Link
-            className="flex-none text-xl font-semibold text-black dark:text-white"
+            className="footer-link"
             to="/"
             aria-label="Brand">
             Garance Defrel
           </Link>
         </div>
-        <div className="mt-3">
-          <p className="text-gray-500">garance.defrel@outlook.com</p>
-          <p className="text-gray-500"> © 2023 Copyright Garance Defrel. Tous droit réservés.</p>
+        <div className="mt-4">
+          <p className="footer-email">garance.defrel@outlook.com</p>
+          <p className="footer-copyright"> © 2023 Copyright Garance Defrel. Tous droit réservés.</p>
         </div>
         <div className="mt-3 space-x-2">
           <Link

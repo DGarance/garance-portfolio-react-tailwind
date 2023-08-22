@@ -5,13 +5,12 @@ import Card from "../Card/Card";
 
 export default function Portfolio() {
   return (
-    <section className=" dark:bg-martinique-900">
-      <div className="container px-6 py-12 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">Portfolio</h1>
-
-        <div className="mt-8 xl:mt-16 lg:flex lg:-mx-12">
+    <section className="portfolio-section">
+      <div className="portfolio-container">
+        <h1 className="portfolio-title">Portfolio</h1>
+        <div className="portfolio-grid">
           <div className="flex-1 mt-8 lg:mx-12 lg:mt-0">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <div className="portfolio-item">
               {projects.map((item, index) => (
                 <div key={index}>
                   <Link to={`/portfolio/${item.id}`}>
