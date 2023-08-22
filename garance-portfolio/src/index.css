@@ -29,13 +29,13 @@
 
 @layer components {
   .btn-hover {
-    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg  hover:bg-martinique-700 focus:ring-4 focus:ring-martinique-900 dark:text-white;
+    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg  hover:bg-martinique-400 focus:ring-4 focus:ring-martinique-900 dark:text-white;
   }
   .btn-transparent {
-    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-martinique-700 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-martinique-700 dark:hover:bg-martinique-700 dark:focus:ring-martinique-800;
+    @apply inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-martinique-400 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-martinique-700 dark:hover:bg-martinique-400 dark:focus:ring-martinique-800;
   }
   .btn-contact {
-    @apply w-full px-5 py-3 mt-4 text-base font-medium text-center text-white capitalize transition-colors duration-300 transform bg-martinique-500 rounded-md hover:bg-martinique-400 focus:outline-none focus:ring focus:ring-martinique-300 focus:ring-opacity-50;
+    @apply w-full px-5 py-3 mt-4 text-base font-medium text-center text-white capitalize transition-colors duration-300 transform bg-martinique-400 rounded-md hover:bg-martinique-400 focus:outline-none focus:ring focus:ring-martinique-300 focus:ring-opacity-50;
   }
   .icon-color {
     @apply inline-flex justify-center items-center mx-1.5 dark:hover:text-martinique-400 text-martinique-400 transition-colors duration-300 transform hover:text-martinique-500;

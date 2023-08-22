@@ -35,7 +35,7 @@ const ProgressCircle = ({ skillName, percentage, icon }) => {
       </div>
       <div className="mr-2">
         <img
-        
+          className="fill-martinique-500"
           src={icon}
           alt="icon"
         />

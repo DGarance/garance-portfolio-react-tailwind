@@ -7,7 +7,7 @@ export default function Navbar(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-martinique-100 border-gray-200 dark:bg-martinique-950 shadow fixed top-0 w-full z-50 lg:flex lg:justify-around">
+    <nav className="bg-martinique-100 border-gray-200 dark:bg-martinique-400 shadow fixed top-0 w-full z-50 lg:flex lg:justify-around">
       <div className="flex justify-between items-center px-4 py-3">
         <div className="flex items-center">
           <span className="text-martinique-950 text-xl font-semibold dark:text-white">Garance Defrel</span>

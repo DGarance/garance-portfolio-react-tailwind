@@ -4,7 +4,7 @@ import skillsData from "../../data/skills.json";
 
 export default function Skills() {
   return (
-    <section className="py-10 dark:bg-martinique-900">
+    <section className="py-10 dark:bg-martinique-950">
       <div className="container mx-auto">
         <div className="text-center mb-6">
           <h1 className="text-4xl font-bold text dark:text-white">Mes compétences</h1>

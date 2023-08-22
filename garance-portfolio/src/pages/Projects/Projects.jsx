@@ -59,6 +59,31 @@ export default function Projects() {
                 src={work.brand}
                 alt=""
               />
+              <div className="mt-8 text-center">
+                <Link
+                  to={work.github}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <Button
+                    className="btn-hover hover:underline"
+                    color="hover"
+                    text="Github"
+                    icon={<FaGithub className="w-5 h-5 ml-2 -mr-1" />}
+                  />
+                </Link>
+
+                <Link
+                  to={work.live}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <Button
+                    className="btn-hover hover:underline"
+                    color="hover"
+                    text="Live"
+                    icon={<FaWifi className="w-5 h-5 ml-2 -mr-1" />}
+                  />
+                </Link>
+              </div>
             </div>
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
@@ -72,31 +97,6 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="mt-8 text-center">
-            <Link
-              to={work.github}
-              target="_blank"
-              rel="noopener noreferrer">
-              <Button
-                className="btn-hover hover:underline"
-                color="hover"
-                text="Github"
-                icon={<FaGithub className="w-5 h-5 ml-2 -mr-1" />}
-              />
-            </Link>
-
-            <Link
-              to={work.live}
-              target="_blank"
-              rel="noopener noreferrer">
-              <Button
-                className="btn-hover hover:underline"
-                color="hover"
-                text="Live"
-                icon={<FaWifi className="w-5 h-5 ml-2 -mr-1" />}
-              />
-            </Link>
           </div>
         </div>
       </div>

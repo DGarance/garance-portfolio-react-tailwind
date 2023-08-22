@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-martinique-100 dark:bg-martinique-950">
+    <footer className="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-martinique-100 dark:bg-martinique-400">
       <div className="text-center">
         <div>
           <Link
