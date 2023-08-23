@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/garance-portfolio-react-tailwind/home/static/css/main.f77d9b5e.css",
-    "main.js": "/garance-portfolio-react-tailwind/home/static/js/main.39e51128.js",
-    "static/media/Garance-profil.jpg": "/garance-portfolio-react-tailwind/home/static/media/Garance-profil.0e450a7e0611f8127b31.jpg",
-    "static/media/programmer.svg": "/garance-portfolio-react-tailwind/home/static/media/programmer.415df25f5acefa4a5250c5cd71e40f4c.svg",
-    "static/media/moon.svg": "/garance-portfolio-react-tailwind/home/static/media/moon.8304e0a1e76643987f6e887f0cd617ff.svg",
-    "static/media/sun.svg": "/garance-portfolio-react-tailwind/home/static/media/sun.c3c3cdee3b5e1b0fe1da15df3cc4c6c4.svg",
-    "index.html": "/garance-portfolio-react-tailwind/home/index.html",
-    "main.f77d9b5e.css.map": "/garance-portfolio-react-tailwind/home/static/css/main.f77d9b5e.css.map",
-    "main.39e51128.js.map": "/garance-portfolio-react-tailwind/home/static/js/main.39e51128.js.map"
+    "main.css": "/garance-portfolio-react-tailwind/static/css/main.f77d9b5e.css",
+    "main.js": "/garance-portfolio-react-tailwind/static/js/main.a123ff4e.js",
+    "static/media/Garance-profil.jpg": "/garance-portfolio-react-tailwind/static/media/Garance-profil.0e450a7e0611f8127b31.jpg",
+    "static/media/programmer.svg": "/garance-portfolio-react-tailwind/static/media/programmer.415df25f5acefa4a5250c5cd71e40f4c.svg",
+    "static/media/moon.svg": "/garance-portfolio-react-tailwind/static/media/moon.8304e0a1e76643987f6e887f0cd617ff.svg",
+    "static/media/sun.svg": "/garance-portfolio-react-tailwind/static/media/sun.c3c3cdee3b5e1b0fe1da15df3cc4c6c4.svg",
+    "index.html": "/garance-portfolio-react-tailwind/index.html",
+    "main.f77d9b5e.css.map": "/garance-portfolio-react-tailwind/static/css/main.f77d9b5e.css.map",
+    "main.a123ff4e.js.map": "/garance-portfolio-react-tailwind/static/js/main.a123ff4e.js.map"
   },
   "entrypoints": [
     "static/css/main.f77d9b5e.css",
-    "static/js/main.39e51128.js"
+    "static/js/main.a123ff4e.js"
   ]
 }
